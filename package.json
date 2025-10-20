@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro build && cp ../../public_html/.well-known/acme-challenge/* dist/.well-known/acme-challenge/ && rm -r ../../public_html/* && cp -aR dist/. ../../public_html/",
     "preview": "astro preview",
     "astro": "astro"
   },
