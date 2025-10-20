@@ -10,12 +10,14 @@ interface Props {
 const { icon, title } = Astro.props;
 ---
 
+<!-- ToDo: Add parameters for more body text control -->
+<!-- ToDo: Consider adding styles for cleaner handling of tables/lists within the body text -->
 <article class="card sl-flex">
    <p class="title sl-flex">
-      {icon && <Icon name={icon} class="icon" size="1em"/>}
-      <span set:html={title}/>
+      {icon && <Icon name={icon} class="icon" size="1.65em"/>}
+      <span set:html={title} style="font-size:4rem"/>
    </p>
-   <div class="body" style="font-size:20px">
+   <div class="body" style="font-size:24px">
       <slot />
    </div>
 </article>
@@ -53,6 +55,7 @@ const { icon, title } = Astro.props;
 			color: var(--sl-color-white);
 			line-height: var(--sl-line-height-headings);
 			gap: 1rem;
+			text-align: center;
 			align-items: center;
 		}
 		.card .icon {
@@ -65,6 +68,8 @@ const { icon, title } = Astro.props;
 		.card .body {
 			margin: 0;
 			font-size: clamp(var(--sl-text-body), calc(1.5rem + 1vw), var(--sl-text-body));
+			font-weight: 600;
+			line-height: 1.2;
 		}
 	}
 </style>

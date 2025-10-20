@@ -28,3 +28,4 @@ export const collections = {
 	docs: thndDocs,
 	assets: imageAssets,
 };
+
