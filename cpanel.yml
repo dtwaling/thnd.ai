@@ -1,0 +1,14 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/grropklv/public_html/
+    - /dist -R _astro $DEPLOYPATH
+    - /dist -R favicon $DEPLOYPATH
+    - /dist -R pagefind $DEPLOYPATH
+    - /dist -R resources $DEPLOYPATH
+    - /dist .htaccess $DEPLOYPATH
+    - /dist 404.html $DEPLOYPATH
+    - /dist index.html $DEPLOYPATH
+    - /dist robots.txt $DEPLOYPATH
+    - /dist sitemap-0.xml $DEPLOYPATH
+    - /dist sitemap-index.xml $DEPLOYPATH
