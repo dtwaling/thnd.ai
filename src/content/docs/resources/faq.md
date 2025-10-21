@@ -1,6 +1,6 @@
 ---
-title: FAQ
-description: "THND Project"
+title: THND FAQ
+# description: "THND Project"
 hero:
   image:
     file: ../../../assets/logo/thnd-cloud-logo.png
@@ -16,110 +16,92 @@ hero:
       variant: secondary
       external: true
 ---
-# What exactly is the THND project?
 
-THND is a crypto project created by veterans in the crypto space with the purpose of changing the way people trade. They believe that in order to be successful there doesn’t need to be “winners” and “losers.” They believe in helping people rethink crypto trading and move past the “degen mindset” by providing a trading platform that manages crypto portfolios for steady growth. All funds are controlled by the user. THND is NOT an investment and is a license to access an advanced trading platform.  
- 
-
-## What makes THND different from other AI tools?
+## What is THND?
+THND is a utility token that grants a license to access NΞXUS (Omni Trader), an AI‑assisted crypto trading platform. The platform focuses on disciplined, automated portfolio management rather than “degen” gambling. You keep control of your funds and keys at all times. THND is not an investment; it is access.
 
 ## Who created THND?
+THND/NΞXUS was built by a team of crypto veterans with long experience in automated trading, AI, and large‑scale software systems.
 
-THND was developed by a team of cryptocurrency pioneers.
+## What makes NΞXUS (the THND AI Trader) different?
+- User‑controlled funds and keys: You can view your private keys, audit balances, and withdraw at any time.
+- Practical automation: Automated buy/sell flows, DCA, and stables rotation targeted at steady growth and risk control.
+- Transparent ops: In‑app audits, explicit fees, visible withdrawal flows, and clear logs.
+- Telegram‑native UX: Trade, review positions, export reports, and manage withdrawals without leaving Telegram.
 
-​
+## Contract address
+`0x7567d006f6be77E3D87Aa831855CB4102E37b17D`
 
-## What is the contact address?
+## What are the benefits of holding THND?
+Holding THND unlocks platform access and additional benefits:
+- Platform access: Use the full AI Trader feature set with eligible holdings (see Access below).
+- Community perks: Priority features, early betas, potential rewards, and NFT drops announced via the community.
+- License model: No recurring subscription; access is gated by your holdings.
 
-0x7567d006f6be77E3D87Aa831855CB4102E37b17D
+Details and thresholds are below.
 
-## What is the benefit of holding THND?
-
-Holding THND gives you benefits based on how much you hold. This includes access to the AI Trader, revenue sharing opportunities, and even custom made NFTs. More information for each of these will be shared below.
-
-## What are the tokenomics of THND?
-
-As the name “Three Hundred” suggests, the max supply was 300 tokens. Each time THND is traded, 3% of the trade is permanently burned. This 3% does not go to a marketing wallet for later use, it is completely removed from the supply and is gone forever. This burn makes THND a deflationary token.
-
-## Is the liquidity locked? If so, for how long?
-
-Liquidity has been locked for 300 months.
+## Tokenomics
+- Max supply: 300 tokens (“Three Hundred”).
+- Burn: 3% of every transfer is permanently burned (true burn; no marketing wallet).
+- Liquidity: Locked for 300 months.
+- Result: Deflationary supply over time.
 
 ## How do I get THND?
+- Exchange: Click “Buy” on Dextools or another DEX to purchase via a supported exchange.
 
-There are two ways to obtain THND.
-
-​
-
-1. Simply click on the “Buy” link on the THND.io website to be taken to the location you can purchase THND using the traditional method of an exchange.
-    
-2. Click on the “OTC” link on the THND.io website to be taken to our OTC partners to view current offerings and purchase THND directly from another holder.
-    
-
-## What is the best way to purchase? OTC or through an exchange?
-
-While both are safe methods, we recommend that if you are wishing to purchase a large amount of THND (1 token or more) that you utilize the OTC method to reduce the impact of slippage.
-
-
----
-  
-## What exactly is the AI trader?
-
-THND AI is your AI-powered co-pilot for the exciting, yet sometimes overwhelming, world of crypto trading. Pioneered by a seasoned team, THND AI brings expertise, transparency, and community to the forefront of your crypto journey.  
- 
-
-Imagine this:
-
-- Automated Profits: Our eagerly anticipated AutoTrade feature takes the reins, making intelligent trading decisions based on real-time market data. Sit back and watch your portfolio grow with positive average user gains since launch.
-    
-- Smarter Fees: Forget sky-high transaction costs! THND AI's sophisticated gas optimization and routing techniques save you up to 40% compared to leading competitors. More gains, less fees - that's the THND way.
-    
-- Community Focus: We believe in open communication and collaboration. Join our vibrant Telegram community, engage with the team, share your thoughts, and learn from other traders. Your voice matters at THND.
-    
-- Shared Success: Skin in the game? All Net revenue goes directly back to our users, proportional to your holdings. The more you hold, the more you earn. It's a win-win for everyone.
-    
-
-##### THND AI is more than just a platform, it's a philosophy:
-
-- Expertise: Decades of experience in AI and trading fuel our cutting-edge technology.
-    
-- Transparency: We keep our doors open and our communication clear. Ask us anything!
-    
-- Community: Your success is our success. We thrive on collaboration and shared knowledge.
-    
-- Profit: We believe everyone deserves a piece of the pie. Our revenue-sharing model empowers you.
-    
-
-## What makes the THND AI trading platform different from other AI-powered platforms?
-
-The lead developer has an extensive understanding of automated crypto trading software, with years of automated and profitable trading history using millions of dollars of crypto. With over three decades of experience in artificial intelligence, network security, and software programming, he is more than qualified to develop this AI trading platform.
-
-## What is NΞXUS?
-
-NΞXUS represents our AI Trader vision. Every token every 60 seconds, heuristics, technical indicators, sentiment, and much more.
-
-## How much does the AI Trader cost?
-
-The AI Trader doesn't "cost" anything. To use the fully featured telegram "bot", 0.97 $THND token is required for access. When a single token is linked to the custodial wallet generated by the AI Trader, a 3% true burn is applied (as with all transfers). If you decide you don't want to use the system anymore, you can sell your token and lose access.  
-  
-Holding 1 Azuki Ape gives you access to the $SOL and $ETH trader. Holding 0,97 $THND gives you access to everything including the Layer One trader. There are no recurring fees or subscription costs.
-
-## What are the current features the AI Trader offers?
-
-Sophisticated gas optimization and routing techniques can save you up to 40% more in network fees than leading competitors. 50% of all revenue generated is shared directly with all users, proportional to their holdings. THND AI also provides the current features.
-
-- AI Buyer Mode: Automated Buys
-    
-- Auto Manage: Automated Sells, DCA, and Double Down.
-    
-- Target Mode: Finds ideal buy/sell times with precision. ⚠️ EARLY BETA ⚠️
-    
-- Pioneer Mode: Detect very early stage coins, sometimes so early, they are not even called by Alpha callers yet.⚠️ VERY EARLY ALPHA ⚠️
-    
-- Stables Rotation: Auto Enter and Exit Stable Coins and ETH based on market forecasts.⚠️ AUTO IS BETA ⚠️
-    
-- Contract analysis: Simply paste in a contract address and the trader will give you it’s opinion on the token, the expected hold times, and even an estimated rate of return.
+*Tip:* For larger purchases (≈1 THND or more), breaking the purchase into smaller ammounts (i.e. 0.25 at a time) is recommended to minimize slippage.
 
 ## How do I gain access to the AI Trader?
+Two ways to qualify:
+- Hold 0.97 $THND: Full access, including the Layer One trader.
+- Hold 10 Azuki Apes: Access to Layer One, with limited pairs and features.
 
-Currently there are two different ways to gain access to the trader. Holding 1 Azuki Ape gives you access to the $SOL and $ETH trader. Holding 0,97 $THND gives you access to everything including the Layer One trader.
+Link your wallet in the Telegram bot to validate holdings. There are no recurring subscription fees; access is token‑gated.
+
+## What exactly is the AI Trader (NΞXUS)?
+NΞXUS is an AI‑assisted trading system that continuously evaluates markets and helps manage your portfolio. You operate it via Telegram with inline buttons and commands.
+
+Core capabilities:
+- Automated trading flows
+  - AI Buyer Mode: Automated buys.
+  - Auto‑Manage: Automated sells, DCA, and double‑down logic.
+  - Stables Rotation: Rotate between stables and majors (e.g., ETH) based on market forecasts.
+- Risk and ops
+  - Contract analysis: Paste a contract address for an at‑a‑glance read on risk, hold profile, and expected time horizon.
+  - Portfolio oversight: Unified wallet summary, positions, P/L, holdings refresh, and per‑user audit tools.
+  - Withdrawals: Request USDC Layer One withdrawals with a structured wait/penalty model; completion messages include a “View Transaction” link.
+- Quality of life
+  - Telegram inline actions for trading, exporting reports, viewing wallets, linking addresses, and more.
+  - Admin tooling (for operators) to audit, reconcile, and manage edge cases without impacting uptime.
+
+*Note:* Some features are in active beta/alpha. Expect fast iteration and frequent improvements.
+
+## What is NΞXUS (vision)?
+“NΞXUS” is the umbrella for the trader’s research loop: scanning tokens frequently (e.g., every 60 seconds), blending heuristics, technical indicators, and sentiment signals to drive automation and alerts.
+
+## How much does the AI Trader cost?
+There is no subscription. Access is gated by holdings:
+- 0.97 $THND → Full platform access (including Layer One).
+
+Transfers of THND incur the token’s 3% burn as described in Tokenomics.
+
+## What are the current features?
+- AI Buyer Mode (automated buys)
+- Auto‑Manage (automated sells, DCA, double‑down)
+- Contract analysis on pasted addresses
+- Portfolio summary, wallet linking, export, and audit tools
+- Layer One USDC withdrawals with explicit wait/penalty and Solscan “View Transaction” links
+
+## Is there revenue sharing?
+The community operates a revenue‑sharing model aligned with holdings. Specific percentages, eligibility windows, and distribution details are communicated in the official channels and may evolve as the system matures.
+
+## Is the platform custodial?
+Keys are user‑controlled. The bot can provision wallets you can inspect (including private keys) and withdraw from. Your balances and withdrawals are visible in‑app, and you can export reports for independent reconciliation.
+
+## Is this financial advice?
+No. THND is a license token for platform access. The trader provides tools and automation; markets carry risk. Use your own judgment and manage risk accordingly.
+
+## Where can I get support or learn more?
+- Website: THND.ai
+- Telegram: Join the official community for updates, beta features, and support
+- In‑bot: Use /help for command guidance and quick references
