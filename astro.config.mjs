@@ -2,18 +2,24 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import sitemap from '@astrojs/sitemap';
-import node from '@astrojs/node';
 import mdx from '@astrojs/mdx';
+import cloudflare from '@astrojs/cloudflare';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://thnd.ai',
-  base: '/',
   publicDir: './public',
-
-  adapter: node({
-    mode: 'standalone',
+  adapter: cloudflare({
+    imageService: 'cloudflare'
   }),
+  vite: {
+    build: {
+      minify: false,
+    },
+    ssr: {
+      external: ['node:buffer', 'node:fs/promises', 'node:url', 'node:path', 'node:crypto'],
+    },
+  },
 
   integrations: [
     starlight({
@@ -33,20 +39,4 @@ export default defineConfig({
     mdx(),
     sitemap()
   ],
-
-  // adapter: node({
-  //   mode: 'standalone',
-  // }),
-
-  // server: ({ command }) => ({
-  //   port: command === 'dev' ? 4321 : 8080,
-  //   host: true,
-  // }),
-
-  // outDir: './dist',
-  // output: 'server',
-  // build: {
-  //   client: './client',
-  //   server: './server',
-  // },
 });

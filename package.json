@@ -6,11 +6,11 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "astro dev",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/node": "^9.5.0",
+    "@astrojs/cloudflare": "^12.6.10",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/starlight": "^0.36.1",
