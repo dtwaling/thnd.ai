@@ -10,7 +10,7 @@ export default defineConfig({
   site: 'https://thnd.ai',
   publicDir: './public',
   adapter: cloudflare({
-    imageService: 'cloudflare'
+    imageService: 'compile'
   }),
   vite: {
     build: {
