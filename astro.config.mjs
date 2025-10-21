@@ -11,6 +11,10 @@ export default defineConfig({
   base: '/',
   publicDir: './public',
 
+  adapter: node({
+    mode: 'standalone',
+  }),
+
   integrations: [
     starlight({
       title: 'THND.ai',
