@@ -1,7 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 import cloudflare from '@astrojs/cloudflare';
@@ -30,7 +29,6 @@ export default defineConfig({
         { icon: 'telegram', label: 'Telegram', href: 'https://t.me/orderofhodl' },
       ],
       customCss: [
-        "./src/styles/global.css",
         "./src/styles/custom.css",
       ],
     }),
@@ -46,7 +44,5 @@ export default defineConfig({
     ssr: {
       external: ['node:buffer', 'node:fs/promises', 'node:url', 'node:path', 'node:crypto'],
     },
-
-    plugins: [tailwindcss()],
   },
 });
