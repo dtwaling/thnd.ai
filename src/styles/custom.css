@@ -28,30 +28,12 @@
 }
 
 /* Light mode colors. ...probably not going to use this - also, theme selector is currently overridden.*/
-:root[data-theme='light'] {
-	--sl-color-accent-low: #b2e0ec;
-	--sl-color-accent: #007286;
-	--sl-color-accent-high: #003944;
-	--sl-color-text: #16181d;
-	--sl-color-white: #16181d;
-	--sl-color-gray-1: #222632;
-	--sl-color-gray-2: #343844;
-	--sl-color-gray-3: #535865;
-	--sl-color-gray-4: #868b99;
-	--sl-color-gray-5: #bfc2c9;
-	--sl-color-gray-6: #ebeef4;
-	--sl-color-gray-7: #f5f6f9;
-	--sl-color-black: #ffffff;
-	/* Light theme logo variables */
-	--logo-main: url('/src/assets/logo/thnd-logo_blk.png');
-	--logo-cloud: url('/src/assets/logo/thnd-cloud-logo-blk.png');
-	--sl-card-border-1: 2px solid var(--sl-color-gray-5);
-	--sl-card-bg: #3700951c;
-	/* The additional colors are used for "child" cards (ref. Card.astro) */
-	--sl-card-border-2: 1px solid var(--sl-color-orange);
-	--sl-card-border-3: 1px solid var(--sl-color-yellow);
-	--sl-card-border-4: 1px solid var(--sl-color-green);
-	--sl-card-border-5: 1px solid var(--sl-color-blue);
+/* :root[data-theme='light'] {
+	...
+} */
+
+.social-icons::after {
+	display: none;
 }
 
 @layer base {

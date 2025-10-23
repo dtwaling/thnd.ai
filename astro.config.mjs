@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 import cloudflare from '@astrojs/cloudflare';
@@ -12,19 +13,12 @@ export default defineConfig({
   adapter: cloudflare({
     imageService: 'compile'
   }),
-  vite: {
-    build: {
-      minify: false,
-    },
-    ssr: {
-      external: ['node:buffer', 'node:fs/promises', 'node:url', 'node:path', 'node:crypto'],
-    },
-  },
 
   integrations: [
     starlight({
       components: {
-        ThemeSelect: './src/components/EmptyComponent.astro',
+        ThemeProvider: './src/components/theme/ForceDarkTheme.astro',
+        ThemeSelect: './src/components/theme/EmptyComponent.astro',
       },
       title: 'THND.ai',
       logo: {
@@ -36,10 +30,23 @@ export default defineConfig({
         { icon: 'telegram', label: 'Telegram', href: 'https://t.me/orderofhodl' },
       ],
       customCss: [
+        "./src/styles/global.css",
         "./src/styles/custom.css",
       ],
     }),
     mdx(),
     sitemap()
   ],
+
+  vite: {
+    build: {
+      minify: false,
+    },
+
+    ssr: {
+      external: ['node:buffer', 'node:fs/promises', 'node:url', 'node:path', 'node:crypto'],
+    },
+
+    plugins: [tailwindcss()],
+  },
 });
