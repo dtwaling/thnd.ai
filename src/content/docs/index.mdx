@@ -28,11 +28,10 @@ hero:
 ---
 import Icon from '../../components/Icon.astro';
 import Card from '../../components/Card.astro';
-import CardThnd from '../../components/CardThnd.astro';
-import CardThndRvrs from '../../components/CardThndRvrs.astro';
+import TitleCard from '../../components/TitleCard.astro';
 import CardGrid from '../../components/CardGrid.astro';
 
-<CardThndRvrs title="We bring the" showLogo={true}/>
+<TitleCard title="We bring the" showLogo={true} trailingLogo={true}/>
 
 ### We have spent years developing the most sophisticated and innovative AI-powered tools on the blockchain – all built on the NΞXUS AI Engine. From a fully automated premier AI Trading Platform buying capabilities to optimized Cross-Chain Swaps and the ability to analyze any smart contract at any time using artificial intelligence.
 
@@ -40,7 +39,8 @@ import CardGrid from '../../components/CardGrid.astro';
 
 ### We never stop innovating, and we never stop building. We look forward to building the future of financial sovereignty and am thrilled to be doing so with such incredible people at THND.
 
-<CardThnd title="The most elite Club in Crypto"/>
+<br/>
+<TitleCard title="The most elite Club in Crypto"/>
 
 #### There is a difference between a 'community' and a 'Club' – and we embrace 'winning together' in a way no standard community does.
 
@@ -48,7 +48,8 @@ import CardGrid from '../../components/CardGrid.astro';
 
 #### It is important to show your allegiance to your tribe, and through this partnership, every member can share the THND story with their followers and friends.
 
-<CardThnd title="Utility" showLogo={true}/>
+<br/>
+<TitleCard title="Utility" showLogo={true}/>
 
 ### Trailblazing blockchain solutions- our years of development yield advanced AI-powered tools on the NΞXUS AI Engine is built on the $THND token.
 
@@ -59,15 +60,18 @@ import CardGrid from '../../components/CardGrid.astro';
     It symbolizes our vision and grants access to our AI-powered crypto tools.
     <br/>
     Unlike 'pump and dump,' $THND defies norms. We opened at $28 on November 3, 2023,
-    and hit an all-time-high (ATH) above $30k. We are comfortably over $2k USD today
-    and climbing.
+    and hit an all-time-high (ATH) above $30k.
     <br/>
-    Yet, $THND's journey is just beginning.
+    <Card>
+    $THND's journey is just beginning.
+    </Card>
   </Card>
   <Card title="NΞXUS AI" icon="rocket">
-  NEXUS AI is your AI-powered co-pilot for exciting, yet sometimes overwhelming, world of crypto trading.
-    <br/><br/>
-    Pioneered by a seasoned team, THND AI brings expertise, transparency, and community to the forefront of your crypto journey.
+    NEXUS AI is your AI-powered co-pilot for exciting, 
+    yet sometimes overwhelming, world of crypto trading.
+    <br/>
+    Pioneered by a seasoned team, THND AI brings expertise, transparency, 
+    and community to the forefront of your crypto journey.
 
     - **Automated Profits**
     - **Smarter Fees**

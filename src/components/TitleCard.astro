@@ -1,0 +1,68 @@
+---
+import { Image } from "astro:assets";
+import THNDimg from "../assets/logo/thnd-logo.png";
+interface Props {
+   title: string;
+	titleStyle?: string;
+   showLogo?: boolean;
+	trailingLogo?: boolean;
+}
+
+const {
+	title,
+	titleStyle = "font-size:150%;",
+	showLogo = false,
+	trailingLogo = false
+} = Astro.props;
+---
+
+<!-- ToDo: Add parameter(s) for managing card borders -->
+<br/>
+<article class="card sl-flex">
+   <h2 class="title sl-flex">
+      {showLogo && !trailingLogo && (
+         <a>
+            <Image
+            class="image"
+            src={THNDimg}
+            alt="THND.ai logo"
+            width={300}
+            />
+         </a>
+      )}
+      <a class="title" set:html={title} style={titleStyle}/>
+      {showLogo && trailingLogo && (
+         <a>
+            <Image
+            class="image"
+            src={THNDimg}
+            alt="THND.ai logo"
+            width={300}
+            />
+         </a>
+      )}
+   </h2>
+   <div class="body">
+      <slot />
+   </div>
+</article>
+
+<style>
+	@layer starlight.components {
+		article.card {
+			background-color: var(--sl-color-black);
+		}
+		.title {
+			font-weight: 800;
+			font-size: var(--sl-text-h1);
+			color: var(--sl-color-text);
+			line-height: var(--sl-line-height-headings);
+			gap: 1.3rem;
+			align-items: center;
+		}
+		.card .body {
+			margin: 0;
+			font-size: clamp(var(--sl-text-sm), calc(1.5rem + 1vw), var(--sl-text-body));
+		}
+	}
+</style>

@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 import cloudflare from '@astrojs/cloudflare';
 
-// https://astro.build/config
+// https://astro.build/config 
 export default defineConfig({
   site: 'https://thnd.ai',
   publicDir: './public',
@@ -23,6 +23,9 @@ export default defineConfig({
 
   integrations: [
     starlight({
+      components: {
+        ThemeSelect: './src/components/EmptyComponent.astro',
+      },
       title: 'THND.ai',
       logo: {
         src: './public/favicon/favicon.png',

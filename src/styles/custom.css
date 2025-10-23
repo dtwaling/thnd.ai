@@ -3,6 +3,7 @@
 	--sl-color-accent-low: #002932;
 	--sl-color-accent: #00778b;
 	--sl-color-accent-high: #96d4e4;
+	--sl-color-text: #ffffff;
 	--sl-color-white: #ffffff;
 	--sl-color-gray-1: #ebeef4;
 	--sl-color-gray-2: #bfc2c9;
@@ -11,12 +12,27 @@
 	--sl-color-gray-5: #343844;
 	--sl-color-gray-6: #222632;
 	--sl-color-black: #16181d;
+	--sl-color-yellow: yellow;
+	--sl-color-blue: #001dbeb6;
+	/* Logo theme variables */
+	--logo-main: url('/src/assets/logo/thnd-logo.png');
+	--logo-cloud: url('/src/assets/logo/thnd-cloud-logo.png');
+	--sl-card-border-1: 2px solid var(--sl-color-gray-5);
+	--sl-card-bg: #3700951c;
+	/* The additional colors are used for "child" cards (ref. Card.astro) */
+	--sl-card-border-2: 1px solid var(--sl-color-orange-low);
+	--sl-card-border-3: 1px solid var(--sl-color-yellow);
+	--sl-card-border-4: 1px solid var(--sl-color-green-low);
+	--sl-card-border-5: 1px solid var(--sl-color-blue-low);
+	--sl-card-icon-size: 15em;
 }
-/* Light mode colors. */
+
+/* Light mode colors. ...probably not going to use this - also, theme selector is currently overridden.*/
 :root[data-theme='light'] {
 	--sl-color-accent-low: #b2e0ec;
 	--sl-color-accent: #007286;
 	--sl-color-accent-high: #003944;
+	--sl-color-text: #16181d;
 	--sl-color-white: #16181d;
 	--sl-color-gray-1: #222632;
 	--sl-color-gray-2: #343844;
@@ -26,4 +42,25 @@
 	--sl-color-gray-6: #ebeef4;
 	--sl-color-gray-7: #f5f6f9;
 	--sl-color-black: #ffffff;
+	/* Light theme logo variables */
+	--logo-main: url('/src/assets/logo/thnd-logo_blk.png');
+	--logo-cloud: url('/src/assets/logo/thnd-cloud-logo-blk.png');
+	--sl-card-border-1: 2px solid var(--sl-color-gray-5);
+	--sl-card-bg: #3700951c;
+	/* The additional colors are used for "child" cards (ref. Card.astro) */
+	--sl-card-border-2: 1px solid var(--sl-color-orange);
+	--sl-card-border-3: 1px solid var(--sl-color-yellow);
+	--sl-card-border-4: 1px solid var(--sl-color-green);
+	--sl-card-border-5: 1px solid var(--sl-color-blue);
+}
+
+@layer base {
+	.card {
+		border: var(--sl-card-border-1);
+		background-color: var(--sl-card-bg);
+		padding: clamp(1em, 2em, 1em);
+		flex-direction: column;
+		gap: clamp(0.1rem, calc(0.125rem + 1vw), 0.1rem);
+		border-radius: 1rem;
+	}
 }

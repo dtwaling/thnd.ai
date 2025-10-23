@@ -1,6 +1,5 @@
 ---
 title: THND FAQ
-# description: "THND Project"
 hero:
   image:
     file: ../../../assets/logo/thnd-cloud-logo.png

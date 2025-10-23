@@ -2,11 +2,6 @@ import { defineCollection, z } from 'astro:content';
 import { docsLoader } from '@astrojs/starlight/loaders';
 import { docsSchema } from '@astrojs/starlight/schema';
 
-const thndDocs = defineCollection({
-	loader: docsLoader(),
-	schema: docsSchema()
-});
-
 const imageAssets = defineCollection({
 	schema: ({image}) => z.object({
 		title: z.string().max(60, "Maximum of 60 characters in title required.").min(10, "Minimum of 10 characters in title required."),
@@ -25,7 +20,21 @@ const imageAssets = defineCollection({
 });
 
 export const collections = {
-	docs: thndDocs,
+  docs: defineCollection({
+    loader: docsLoader(),
+    schema: docsSchema({
+      extend: ({ image }) => z.object({
+        title: z.string().max(60, "Maximum of 60 characters in title required.").optional(),
+        description: z.string().max(250, "Maximum of 250 characters in description required.").optional(),
+        cover: image().optional(),
+        coverAlt: z.string().optional(),
+        coverImage: image().optional(),
+        emoji: z.string().optional(),
+        pubDate: z.date().optional(),
+        tags: z.array(z.string()).max(5, "Maximum of 5 tags required.").optional(),
+      }),
+    }),
+  }),
 	assets: imageAssets,
 };
 

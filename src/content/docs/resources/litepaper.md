@@ -1,6 +1,5 @@
 ---
 title: OMNI TradeX Litepaper
-# description: ""
 hero:
   tagline: "Omni TradeX: Advanced Cross-Chain Arbitrage with AI and Mathematical Optimization"
   image:
